@@ -6,6 +6,12 @@ const getAll = async (req,res) => {
 	return res.status(200).json(tasks);
 };
 
+const addTask = async (req,res) => {
+	const task = await tasksModel.addTask(req.body);
+	return res.status(201).json(task);
+};
+
 module.exports = {
 	getAll,
+	addTask,
 };
