@@ -1,4 +1,4 @@
-<h1 align=center> API PARA ToDo List</h1>
+<h1 align=center> API para ToDo List</h1>
 
 <br>
 
@@ -6,8 +6,6 @@
 
 <br>
 
-> Acessar portfolio: <a href="https://portfolio-ronaldo-fidelis.netlify.app/" target="_blank">Link</a>
- 
 ## Objetivo
 
 - Consolidar o aprendizado em requisições http (GRUD) utilizando o framework Express.js
@@ -18,6 +16,7 @@
 * **[ Node.js ](https://nodejs.org/en)**
 * **[ Express.js ](https://expressjs.com/pt-br/)**
 * **[ MySQL ](https://www.mysql.com/)**
+* **[ Docker ](https://www.mysql.com/)**
 * **[ Insomnia ](https://insomnia.rest/)**
 
 ## 📝 Maiores aprendizados
