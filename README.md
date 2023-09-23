@@ -2,13 +2,13 @@
 
 <br>
 
-
+[cap-api.webm](https://github.com/RonaldoFidelis/Api-ToDo/assets/92171641/360e2e39-23ce-4ca4-b627-47c47e8be23a)
 
 <br>
 
 ## Objetivo
 
-- Consolidar o aprendizado em requisições http (GRUD) utilizando o framework Express.js
+- Entender como o funcionamento das requisições HTTP utilizando o Express.js. O projeto cadastra, mostra, atualiza e deleta as tarefas, consumindo um banco de dados relaciona local utilizando MySQL.
 
 ## 🚀 Tecnologias usadas:
 
