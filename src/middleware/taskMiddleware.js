@@ -1,4 +1,4 @@
-const fieldTitle = (req,res,next) => {
+const checkPost = (req,res,next) => {
 	const {body} = req;
 
 	if(body.title === undefined){
@@ -17,5 +17,5 @@ const fieldTitle = (req,res,next) => {
 };
 
 module.exports= {
-	fieldTitle,
+	checkPost,
 };

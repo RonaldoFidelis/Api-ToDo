@@ -1,27 +1,27 @@
 const tasksModel = require('../model/taskModel');
 
-const getAll = async (req,res) => {
+const showTasks = async (req,res) => {
 	const tasks = await tasksModel.getAll();
 	return res.status(200).json(tasks);
 };
 
 const addTask = async (req,res) => {
-	const newTask = await tasksModel.addTask(req.body);
-	return res.status(201).json(newTask);
+	tasksModel.addTask(req.body);
+	return res.status(201).json({ message: 'Tarefa cadastrada!', task: req.body.title });
 };
 
 const updateTask = async (req,res) => {
-	const updateTask = await tasksModel.updateTask(req.body);
-	return res.status(200).json(updateTask);
+	tasksModel.updateTask(req.body);
+	return res.status(200).json({ message: 'Tarefa atualizada!', task: req.body.title });
 };
 
 const deleteTask = async (req,res) => {
-	const task = await tasksModel.deleteTask(req.body);
-	return res.status(200).json(task);
+	tasksModel.deleteTask(req.body);
+	return res.status(200).json({ message: 'Tarefa apagada.' });
 };
 
 module.exports = {
-	getAll,
+	showTasks,
 	addTask,
 	updateTask,
 	deleteTask,

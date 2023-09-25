@@ -1,6 +1,6 @@
-const connection = require('./connection');
+const connection = require('../connection/connection');
 
-const getAll = async () => {
+const showTasks = async () => {
 	const query = 'SELECT * FROM tasks;';
 	const [tasks] = await connection.execute(query);
 	return tasks;
@@ -33,7 +33,7 @@ const deleteTask =  async (task) => {
 };
 
 module.exports = {
-	getAll,
+	showTasks,
 	addTask,
 	updateTask,
 	deleteTask,
